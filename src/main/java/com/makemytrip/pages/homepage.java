@@ -104,7 +104,9 @@ public class homepage {
 		for(WebElement e : elementUtil.getElements(toCityList)) {
 			if(e.getText().contains(toCity)) {
 				e.click();
+				System.out.println("Test");
 				break;
+				
 			}
 		}
 	}
