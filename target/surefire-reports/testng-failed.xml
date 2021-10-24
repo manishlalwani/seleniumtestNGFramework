@@ -8,6 +8,7 @@
           <include name="endTestCase"/>
           <include name="verifyTripSelection"/>
           <include name="setUp"/>
+          <include name="verifyhompePageLogoTest"/>
         </methods>
       </class> <!-- com.makemytrip.testcases.homepagetestcases -->
     </classes>

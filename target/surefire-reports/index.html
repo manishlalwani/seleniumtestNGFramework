@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.makemytrip.testcases.homepagetestcases" class="method navigator-link" hash-for-method="verifyTripSelection">verifyTripSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.makemytrip.testcases.homepagetestcases" class="method navigator-link" hash-for-method="verifyhompePageLogoTest">verifyhompePageLogoTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -147,14 +152,33 @@
                   <a name="verifyTripSelection">
                   </a> <!-- verifyTripSelection -->
                   <span class="method-name">verifyTripSelection</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;div class=&quot;fsw_inputBox searchCity inactiveWidget &quot;&gt; is not reachable by keyboard
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.xpath: //div[contains(@class,&apos;selected&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;Temps-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:4a2:a4fd:d839:e4ef%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.2&apos;
+System info: host: &apos;Temps-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:85:a161:d34a:d0e6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [286a0ffd-ceed-5849-a7b4-f837abf1c101, sendKeysToElement {id=5ddbca93-9dd4-2949-85c1-83969e413360, value=[Ljava.lang.CharSequence;@544e8149}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:debuggerAddress: localhost:55736, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 7220, moz:profile: /var/folders/9l/p14b02rn0g7..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:55736/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on MAC (286a0ffd-ceed-5849-a7b4-f837abf1c101)] -&gt; xpath: //div[contains(@class,&apos;searchCity&apos;)]]
-Session ID: 286a0ffd-ceed-5849-a7b4-f837abf1c101
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:debuggerAddress: localhost:54834, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 2651, moz:profile: /var/folders/9l/p14b02rn0g7..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:54834/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7ab3bd7a-715b-b148-acfc-b19adcc0f257
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.makemytrip.pages.homepage.selectCurrentDateFromDatePicker(homepage.java:124)
+	at com.makemytrip.testcases.homepagetestcases.verifyTripSelection(homepagetestcases.java:54)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyhompePageLogoTest">
+                  </a> <!-- verifyhompePageLogoTest -->
+                  <span class="method-name">verifyhompePageLogoTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;mmtLogo makeFlex&quot;&gt; is not clickable at point (176,23) because another element &lt;div class=&quot;loginModal displayBlock modalLogin dynHeight personal &quot;&gt; obscures it
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;Temps-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:85:a161:d34a:d0e6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7ab3bd7a-715b-b148-acfc-b19adcc0f257, clickElement {id=5579eb15-f014-e64f-a02f-9731ed1064d8}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:debuggerAddress: localhost:54834, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 2651, moz:profile: /var/folders/9l/p14b02rn0g7..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:54834/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (7ab3bd7a-715b-b148-acfc-b19adcc0f257)] -&gt; xpath: //a[@class=&apos;mmtLogo makeFlex&apos;]]
+Session ID: 7ab3bd7a-715b-b148-acfc-b19adcc0f257
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -163,9 +187,10 @@ Session ID: 286a0ffd-ceed-5849-a7b4-f837abf1c101
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at com.makemytrip.pages.homepage.enterFromCity(homepage.java:66)
-	at com.makemytrip.testcases.homepagetestcases.verifyTripSelection(homepagetestcases.java:44)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.makemytrip.utilities.ElementUtil.doClick(ElementUtil.java:36)
+	at com.makemytrip.pages.homepage.getImageIconDetails(homepage.java:49)
+	at com.makemytrip.testcases.homepagetestcases.verifyhompePageLogoTest(homepagetestcases.java:36)
 ... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -197,7 +222,7 @@ Session ID: 286a0ffd-ceed-5849-a7b4-f837abf1c101
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/temp/eclipse-workspace/java/testng.xml</span>
+            <span class="header-content">/Users/temp/eclipse-workspace/seleniumtestNGFramework/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -207,6 +232,8 @@ Session ID: 286a0ffd-ceed-5849-a7b4-f837abf1c101
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.makemytrip.testcases.homepagetestcases&quot;/&gt;
+      &lt;class name=&quot;com.makemytrip.basetest.basetest&quot;/&gt;
+      &lt;class name=&quot;com.makemytrip.utilities.Driverfactory&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -220,7 +247,7 @@ Session ID: 286a0ffd-ceed-5849-a7b4-f837abf1c101
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -246,24 +273,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAllLinksText')
+data.setCell(0, 1, 'verifyTripSelection')
 data.setCell(0, 2, 'com.makemytrip.testcases.homepagetestcases')
-data.setCell(0, 3, 5184);
+data.setCell(0, 3, 32304);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyTripSelection')
+data.setCell(1, 1, 'verifyhomePageTitleTest')
 data.setCell(1, 2, 'com.makemytrip.testcases.homepagetestcases')
-data.setCell(1, 3, 194);
+data.setCell(1, 3, 5075);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyhomePageTitleTest')
+data.setCell(2, 1, 'verifyAllLinksText')
 data.setCell(2, 2, 'com.makemytrip.testcases.homepagetestcases')
-data.setCell(2, 3, 8);
+data.setCell(2, 3, 229);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyhompePageLogoTest')
+data.setCell(3, 2, 'com.makemytrip.testcases.homepagetestcases')
+data.setCell(3, 3, 109);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -278,13 +309,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.makemytrip.testcases.homepagetestcases</span>
+              <span class="ignored-class-name">com.makemytrip.basetest.basetest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyhompePageLogoTest</span>
+                <span class="ignored-method-name">endTestCase</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -302,22 +335,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <span class="method-name">verifyhomePageTitleTest</span>
+                <span class="method-start">14572 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyhompePageLogoTest</span>
+                <span class="method-start">19758 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">verifyAllLinksText</span>
-                <span class="method-start">15636 ms</span>
+                <span class="method-start">19896 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyTripSelection</span>
-                <span class="method-start">20824 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyhomePageTitleTest</span>
-                <span class="method-start">21033 ms</span>
+                <span class="method-start">20126 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">endTestCase</span>
-                <span class="method-start">21044 ms</span>
+                <span class="method-start">52432 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

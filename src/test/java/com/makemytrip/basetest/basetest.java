@@ -1,15 +1,19 @@
 package com.makemytrip.basetest;
 
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeMethod;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.makemytrip.pages.homepage;
 import com.makemytrip.utilities.Driverfactory;
+
+
 
 public class basetest {
 	
@@ -19,6 +23,9 @@ public class basetest {
 	public homepage hp;
 	public Properties prop;
 	
+	
+	
+
 	
 	
 	@BeforeTest

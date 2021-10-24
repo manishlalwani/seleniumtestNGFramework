@@ -4,6 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.makemytrip.testcases.homepagetestcases"/>
+      <class name="com.makemytrip.basetest.basetest"/>
+      <class name="com.makemytrip.utilities.Driverfactory"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
