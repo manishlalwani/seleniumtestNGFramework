@@ -1,0 +1,36 @@
+Manual Test Case for Weather shopper Application
+
+1. Launch the Weather Shopper applioation on chrome browser.
+      URL - http://weathershopper.pythonanywhere.com/
+   Expected Result - Application should be launched and random temperature value should be displayed.
+ 
+2. Click on <Moisturiser> to buy if temperature displayed on UI is below 19 
+   or 
+   Click on <Sunscreen> to buy if temperature is above 34
+   
+   Expected Result -  Based on Selection made in previous step either List of Moisturisers or Sunscreens 
+                       should be displayed with Names and Prices.
+  
+3. Select lowest Priced <aloe> cream and select lowest priced <almond>cream and then select Cart on top right corner.
+   or 
+   Select lowest Priced <spf-50> cream and select lowest priced <spf-30> cream and then select Cart on top right corner.
+   
+    Expected Result -  Checkout page should be displayed with products selected and price against individual products
+                       and total sum of both products to pay amount.
+ 
+4. Click on 'Pay with Card' button to enter card details
+    Expected Result -  Stripe pay option should be displayed with text boxes for Email id,Card Number,CVV and Zip and Pay button.
+ 
+5. Enter email id, Stripe Card Numbers , Random 3 digit cvv , expiry date and zip should be entered
+  Test Data  - email - test1@hotmail.com , stripe card number - 4242424242424242,
+               cvv- 456, expiry_date - 07/23, zip - 456678
+               
+   Expected Result - User Should be able to enter details above to mentioned text boxes
+   
+6. Click on Pay INR <Amount> Button to buy the products.
+   Expected Result -  Confirmation Page should be displayed and On Success "Payment Success" message should be
+                      populated and On Failure "Payment Failure" Should be displayed.
+                      
+                      
+                                     
+  

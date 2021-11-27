@@ -1,0 +1,22 @@
+Pre-requisite -
+
+Please Install
+1. JAVA 8(JDK)
+2. Maven
+3. Chrome and Moziall firefox browsers
+4. git
+5. Eclipse/Intellij(In Case we want to trigger from IDE)
+
+
+Steps
+1.Follow Link to Clone Project to Local - https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+
+
+2.Now you can move to local folder where repository got cloned
+
+3.And Open terminal/cli and run command mvn clean test to run the test command line
+  or
+ From IDEs you can import the project as Maven Project and then use maven clean and maven test commands
+ or
+ You can directly run testng.xml file as TestNG Suitr from runner package to run test cases.
+ 
